@@ -1,0 +1,22 @@
+% GSO group search optimizator
+% Written by Gustavo de Souza (2011)
+% Based on the algorithm proposed in the article:
+% "Group Search Optimizer: An Optimization Algorithm Inspired by Animal Searching Behavior"
+% by He, S., Wu, Q.H. and Saunders, J.R.
+%
+% Parameters:
+% @fobj: objective function
+% U: vector (1 x n) with upper limits, where n is the number of dimensions
+% L: vector (1 x n) with lower limits, where n is the number of dimensions
+% options: options structure for algorithms
+% popsize: population size
+% nproducers: number of producers
+% nscroungers: number of scroungers (in % of population)
+% a: range constant
+% tmax: maximum pursuit angle
+% amax: maximum turning angle
+% lmax: maximum pursuit distance
+% niterations: maximum number of iterations
+% deviation: maximum deviation
+% stall: number of iterations within deviation which will stall the optimization
+% verbose: verbose level
