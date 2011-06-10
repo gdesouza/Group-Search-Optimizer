@@ -1,0 +1,11 @@
+Routines for testing gso on Matlab(R)/Octave
+These routines use function used in CEC 2008 benchmark.
+
+Don't forget to add libgso directory onto your path before executing the scripts:
+> addpath('<your libgso directory>');
+
+execute_tests.m: execute tests sequencially
+
+eval_gso_f(1..11).m: Invoke this scripts to execute the test. 
+
+f(1..11).m: objective functions
