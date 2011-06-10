@@ -1,0 +1,12 @@
+Group Search Optimizer: An Optimization Algorithm Inspired by Animal Searching Behavior
+
+This algorithm was written based on the work by He, S., Wu, Q.H. and Saunders, J.R.:
+He, S., Wu, Q. H., & Saunders, J. R. (2009). Group Search Optimizer: An Optimization Algorithm Inspired by Animal Searching Behavior. IEEE Transactions on Evolutionary Computation, 13(5), 973-990. doi: 10.1109/TEVC.2009.2011992.
+
+For more information about the theory behind the algorithm, please refer to:
+ http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5196714
+ 
+ README - this readme file
+ matlab - source code for matlab
+ 
+ 
