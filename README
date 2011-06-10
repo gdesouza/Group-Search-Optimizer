@@ -6,7 +6,12 @@ He, S., Wu, Q. H., & Saunders, J. R. (2009). Group Search Optimizer: An Optimiza
 For more information about the theory behind the algorithm, please refer to:
  http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5196714
  
- README - this readme file
- matlab - source code for matlab
- 
+ README: this readme file
+ matlab: source code for matlab library
+   |- libgso: library files
+
+ octave - source code for octave library
+   |- libgso: library files
+
+ examples: code for running gso
  
