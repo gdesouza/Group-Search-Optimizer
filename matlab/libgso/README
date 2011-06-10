@@ -1,22 +1,47 @@
-% GSO group search optimizator
-% Written by Gustavo de Souza (2011)
-% Based on the algorithm proposed in the article:
-% "Group Search Optimizer: An Optimization Algorithm Inspired by Animal Searching Behavior"
-% by He, S., Wu, Q.H. and Saunders, J.R.
-%
-% Parameters:
-% @fobj: objective function
-% U: vector (1 x n) with upper limits, where n is the number of dimensions
-% L: vector (1 x n) with lower limits, where n is the number of dimensions
-% options: options structure for algorithms
-% popsize: population size
-% nproducers: number of producers
-% nscroungers: number of scroungers (in % of population)
-% a: range constant
-% tmax: maximum pursuit angle
-% amax: maximum turning angle
-% lmax: maximum pursuit distance
-% niterations: maximum number of iterations
-% deviation: maximum deviation
-% stall: number of iterations within deviation which will stall the optimization
-% verbose: verbose level
+GSO group search optimizator
+Written by Gustavo de Souza (2011)
+Based on the algorithm proposed in the article:
+"Group Search Optimizer: An Optimization Algorithm Inspired by Animal Searching Behavior"
+by He, S., Wu, Q.H. and Saunders, J.R.
+
+-------------
+   Usage
+-------------
+First you need to load the default options:
+octave> options=gsoptions();
+
+Now you can change the parameters in the options structure as needed.
+options.a           = 6;
+options.tmax        = pi/3;
+options.amax        = pi/6;
+options.niterations = 3000;
+options.nscroungers = 0.8;
+options.nproducers  = 1;
+options.error       = 0;
+options.popsize     = 48;
+options.elitesize   = 10;
+options.stall       = 10;
+options.verbose     = 0;
+options.lmax        = 100;
+
+Run gso:
+octave> [x fit] = gso(@objective,U,L,options);
+
+--------------
+  Parameters
+--------------
+@objective: objective function
+U: vector (1 x n) with upper limits, where n is the number of dimensions
+L: vector (1 x n) with lower limits, where n is the number of dimensions
+options: options structure for algorithms
+	popsize: population size
+	nproducers: number of producers
+	nscroungers: number of scroungers (in % of population)
+	a: range constant
+	tmax: maximum pursuit angle
+	amax: maximum turning angle
+	lmax: maximum pursuit distance
+	niterations: maximum number of iterations
+	deviation: maximum deviation
+	stall: number of iterations within deviation which will stall the optimization
+	verbose: verbose level

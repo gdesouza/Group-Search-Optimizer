@@ -9,7 +9,6 @@ options = gsoptions();
 options.a           = round(sqrt(n+1));
 options.tmax        = pi/(options.a)^2;
 options.amax        = options.tmax/2;
-options.limitspace  = 'dont_move';
 options.niterations = niter;
 options.nscroungers = 0.8;
 options.nproducers  = 1;
