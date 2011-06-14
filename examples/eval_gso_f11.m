@@ -18,10 +18,10 @@ options.popsize     = 48;
 options.elitesize   = 10;
 options.stall       = 10;
 options.verbose     = 0;
-options.lmax        = 1095.445115010332;
+options.lmax        = sqrt(43200000);
 
 tic;
-[x fx]=gso(@f11,U,L,options);
+[x fx]=gso(@f16,U,L,options);
 	
 fprintf('Function f11: \t Solution: %e \t Time: %f\n', min(fx),toc);
 

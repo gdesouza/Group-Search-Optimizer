@@ -152,14 +152,14 @@ function [X Fit]=gso( fobj, U, L, options  )
                         Xl = X(n,:) + r1*lmax*Dl;
 
 %                         % limit the search space
-%                         Vmax=find(Xz>Xmax(n,:)); Xz(Vmax)=X(n,Vmax);
-%                         Vmin=find(Xz<Xmin(n,:)); Xz(Vmin)=X(n,Vmin);
-%                         
-%                         Vmax=find(Xr>Xmax(n,:)); Xr(Vmax)=X(n,Vmax);
-%                         Vmin=find(Xr<Xmin(n,:)); Xr(Vmin)=X(n,Vmin);
-% 
-%                         Vmax=find(Xl>Xmax(n,:)); Xl(Vmax)=X(n,Vmax);
-%                         Vmin=find(Xl<Xmin(n,:)); Xl(Vmin)=X(n,Vmin);
+                         Vmax=find(Xz>Xmax(n,:)); Xz(Vmax)=X(n,Vmax);
+                         Vmin=find(Xz<Xmin(n,:)); Xz(Vmin)=X(n,Vmin);
+                         
+                         Vmax=find(Xr>Xmax(n,:)); Xr(Vmax)=X(n,Vmax);
+                         Vmin=find(Xr<Xmin(n,:)); Xr(Vmin)=X(n,Vmin);
+ 
+                         Vmax=find(Xl>Xmax(n,:)); Xl(Vmax)=X(n,Vmax);
+                         Vmin=find(Xl<Xmin(n,:)); Xl(Vmin)=X(n,Vmin);
 
 
                         % calculate fitness
